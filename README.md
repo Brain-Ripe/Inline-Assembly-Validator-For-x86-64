@@ -1,6 +1,6 @@
-# InlineAsmValidator: LLVM-Based Static Analysis for x86-64 Inline Assembly
+# Inline Assembly Validator for x86-64 
 
-**InlineAsmValidator** is an industry-standard Clang plugin designed to audit and validate inline assembly blocks within C source code. This project was developed to bridge the safety gap between high-level C logic and low-level assembly execution, specifically targeting **ABI (Application Binary Interface) compliance**.
+This is an industry-standard Clang plugin designed to audit and validate inline assembly blocks within C source code. This project was developed to bridge the safety gap between high-level C logic and low-level assembly execution, specifically targeting **ABI (Application Binary Interface) compliance**.
 
 ## Overview
 Compilers like Clang and GCC typically treat the string content within `asm()` blocks as a "black box." This tool pierces that box using **LLVM AST Matchers** and stateful analysis to enforce Calling Convention Preservation and ISA (Instruction Set Architecture) compliance.
